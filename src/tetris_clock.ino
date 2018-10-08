@@ -1,4 +1,4 @@
-#define PATTERN4
+//#define PATTERN4
 #include <Ticker.h>
 #include <PxMatrix.h>         // Download from: https://github.com/2dom/PxMatrix/, needs https://github.com/adafruit/Adafruit-GFX-Library via library manager
 #include <TimeLib.h>
@@ -23,9 +23,9 @@
 // ****************************************************************
 void setup()
 {
-  Serial.begin(115200);
+  Serial.begin(9600);
 
-  display.begin();
+  display.begin(16);
   display.clearDisplay();
 
   // Draw intro while WiFi is connecting
@@ -45,7 +45,7 @@ void setup()
 
   init_state = 1;
 
-  display_ticker.attach(0.001, display_updater);
+  display_ticker.attach(0.002, display_updater);
   yield();
   delay(2000);
   // display.clearDisplay();
