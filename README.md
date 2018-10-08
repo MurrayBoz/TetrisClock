@@ -1,6 +1,5 @@
 # TetrisClock
-A tetris clock based on a P3 64x32 RGB matrix and WEMOS D1 mini pro
-Forked from https://github.com/toblum/esp_p10_tetris_clock
+A tetris clock based on a P3 64x32 RGB matrix and WEMOS D1 mini pro. Forked from [toblum/esp_p10_tetris_clock](https://github.com/toblum/esp_p10_tetris_clock)
 
 ## Parts 
 - WEMOS D1 mini pro
