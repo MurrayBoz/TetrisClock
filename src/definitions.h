@@ -21,10 +21,12 @@ WiFiManager wifiManager;        // Global WiFiManager object
 #define AP_TIMEOUT 300
 
 
-// Pins for LED MATRIX
+// Pins for P3 RGB 64x32 LED MATRIX
 #define P_LAT 16
 #define P_A 5
 #define P_B 4
 #define P_C 15
+#define P_D 12
+#define P_E 0
 #define P_OE 2
-PxMATRIX display(32,16, P_LAT, P_OE,P_A,P_B,P_C);
+PxMATRIX display(64,32,P_LAT, P_OE,P_A,P_B,P_C,P_D,P_E);
